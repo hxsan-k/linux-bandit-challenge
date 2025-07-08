@@ -28,7 +28,9 @@ Here's a few quick tips based on my experience so far:
 - **Use `man`, `--help`, or Google** to understand commands. You don’t need to memorise everything.
 - **Get comfortable with the basics**: `ls`, `cd`, `cat`, `find`, `file`, and `grep` will take you far.
 - **Try Ubuntu on WSL** if you're on Windows, it’s a smooth way *(and probably the best way)* to get started.
-- **Be curious.** If something doesn’t work, figure out *why* - that’s how you learn.
+- **Be curious.** If something doesn’t work, figure out *why* - that’s how you learn. And finally,
+- **Make notes as you go.** When you finally crack the code with a command, put it into a Word file
+or note, or just make an entire GitHub repo :)
 
 If you're considering it, want to talk about how I found it, or even need help just SSHing into the game for the first time, feel free to message me on LinkedIn!
 
