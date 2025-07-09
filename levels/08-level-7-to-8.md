@@ -27,7 +27,7 @@ grep millionth data.txt
 
 This returns the line containing the word `millionth` and the password right next to it.
 
-Alternatively, if you want to see the whole file first (not necessary here):
+2. Alternatively, if you want to see the whole file first (not necessary here):
 
 ```bash
 cat data.txt
