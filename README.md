@@ -27,12 +27,31 @@ Here's a few quick tips based on my experience so far:
 - **Don’t panic** when the terminal looks empty or confusing. That’s normal.
 - **Use `man`, `--help`, or Google** to understand commands. You don’t need to memorise everything.
 - **Get comfortable with the basics**: `ls`, `cd`, `cat`, `find`, `file`, and `grep` will take you far.
-- **Try Ubuntu on WSL** if you're on Windows, it’s a smooth way *(and probably the best way)* to get started.
 - **Be curious.** If something doesn’t work, figure out *why* - that’s how you learn. And finally,
 - **Make notes as you go.** When you finally crack the code with a command, put it into a Word file
-or note, or just make an entire GitHub repo :)
+or note, or just make an entire GitHub repo like I did :)
 
-If you're considering it, want to talk about how I found it, or even need help just SSHing into the game for the first time, feel free to message me on LinkedIn!
+>💡**Try Ubuntu on WSL if you're on Windows** — it gives you a real Linux environment right inside Windows, so you can run Linux commands and tools without needing a separate Linux machine.
+
+---
+
+## 🛠️ How to install WSL (Windows Subsystem for Linux)
+
+1. **Open PowerShell as Administrator**  
+   Right-click the Start menu and select Windows PowerShell "Run as Administrator”.
+
+2. **Run this command:**
+   ```powershell
+   wsl --install
+
+This installs WSL along with Ubuntu by default. It may prompt you to restart your computer.  
+
+3. **Set Username & Password**
+After restarting, Ubuntu will launch automatically and ask you to create a username and password.
+
+You’re now ready to start using Linux on Windows!
+
+If you're considering the challenge, want to talk about how I found it, or even need help just SSHing into the game for the first time, feel free to message me on LinkedIn!
 
 ---
 
