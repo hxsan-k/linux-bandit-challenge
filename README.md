@@ -19,7 +19,7 @@ I’m aiming to complete the entire challenge, documenting each level as I go.
 
 ---
 
-## 🧠 New to Linux? Read This First
+## 🧠 New to Linux? Read This First  
 
 If you're thinking about taking on Bandit and you're brand new to Linux, I was there too just recently. 
 Here's a few quick tips based on my experience so far:
@@ -38,7 +38,7 @@ or note, or just make an entire GitHub repo like I did :)
 ## 🛠️ How to install WSL (Windows Subsystem for Linux)
 
 1. **Open PowerShell as Administrator**  
-   Right-click the Start menu and select Windows PowerShell "Run as Administrator”.
+Right-click the Start menu and select Windows PowerShell "Run as Administrator”.
 
 2. **Run this command:**
    ```powershell
@@ -46,7 +46,7 @@ or note, or just make an entire GitHub repo like I did :)
 
 This installs WSL along with Ubuntu by default. It may prompt you to restart your computer.  
 
-3. **Set Username & Password**
+3. **Set Username & Password**  
 After restarting, Ubuntu will launch automatically and ask you to create a username and password.
 
 You’re now ready to start using Linux on Windows!
