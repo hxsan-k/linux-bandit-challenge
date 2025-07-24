@@ -33,6 +33,7 @@ or note, or just make an entire GitHub repo like I did :)
 
 >💡**Try Ubuntu on WSL if you're on Windows** — it gives you a real Linux environment right inside Windows, so you can run Linux commands and tools without needing a separate Linux machine.
 
+- **Finally, before you start, I highly recommend watching this guide to mastering Linux man pages. It will be priceless throughout the challenge:** [Mastering Linux man pages (YouTube)](https://www.youtube.com/watch?v=RzAkjX_9B7E)
 ---
 
 ## 🛠️ How to install WSL (Windows Subsystem for Linux)
