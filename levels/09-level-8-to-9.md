@@ -13,7 +13,6 @@ The password for the next level is stored in the file `data.txt` and is the **on
 - `sort` – Arranges lines in order (required by `uniq` command)
 - `uniq` – Filters out duplicate lines or shows only unique ones (depending on the flag used)
 - `cat` – Displays the content of a file
-- 
 ---
 
 ## 🚀 How to Solve
