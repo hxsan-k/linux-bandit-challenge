@@ -84,6 +84,7 @@ ssh -i [file path to bandit17_key] bandit17@bandit.labs.overthewire.org -p 2220
 This level introduces a practical mix of network scanning, encryption, and authentication.  
 
 You learn how to:  
+
 - Identify listening ports  
 - Differentiate between plain-text and SSL/TLS connections  
 - Handle real-world tools (`nmap`, `nc`, `openssl`) used by sysadmins and security engineers daily  
