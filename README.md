@@ -15,25 +15,23 @@ I’m aiming to complete the entire challenge, documenting each level as I go.
 ## 📁 What’s in This Repo
 
 - `levels/` — Each file contains my notes, commands, and solutions for a Bandit level  
-- Explanations are written in a way that makes it easy to follow, especially if you’re new to this like I am
+- Explanations are written in a way that makes it easy to follow, especially if you’re new to Linux and bash
 
 ---
 
 ## 🧠 New to Linux? Read This First  
 
-If you're thinking about taking on Bandit and you're brand new to Linux, I was there too just recently. 
-Here's a few quick tips based on my experience so far:
+If you're thinking about taking on Bandit and you're brand new to Linux, here's a few quick tips based on my experience so far:
 
-- **Don’t panic** when the terminal looks empty or confusing. That’s normal.
+- **Don’t panic** when the terminal looks empty, or and output looks confusing. That’s normal.
 - **Use `man`, `--help`, or Google** to understand commands. You don’t need to memorise everything.
 - **Get comfortable with the basics**: `ls`, `cd`, `cat`, `find`, `file`, and `grep` will take you far.
-- **Be curious.** If something doesn’t work, figure out *why* - that’s how you learn. And finally,
+- **Be curious.** If something doesn’t work, figure out *why* - that’s how you learn.
 - **Make notes as you go.** When you finally crack the code with a command, put it into a Word file
 or note, or just make an entire GitHub repo like I did :)
-
->💡**Try Ubuntu on WSL if you're on Windows** — it gives you a real Linux environment right inside Windows, so you can run Linux commands and tools without needing a separate Linux machine.
-
+- **Try Ubuntu on WSL if you're on Windows** — it gives you a real Linux environment right inside Windows, so you can run Linux commands and tools without needing a separate Linux machine.
 - **Finally, before you start, I highly recommend watching this guide to mastering Linux man pages. It will be priceless throughout the challenge:** [Mastering Linux man pages (YouTube)](https://www.youtube.com/watch?v=RzAkjX_9B7E)
+
 ---
 
 ## 🛠️ How to install WSL (Windows Subsystem for Linux)
@@ -56,7 +54,7 @@ If you're considering the challenge, want to talk about how I found it, or even 
 
 ---
 
-## 🔗 Connect 
+## 🔗 Connect with Me
 
 Feel free to connect or message me here:  
 [LinkedIn – Hasan Kamran](https://www.linkedin.com/in/hasankamran1)
