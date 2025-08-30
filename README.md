@@ -56,7 +56,7 @@ If you're considering the challenge, want to talk about how I found it, or even 
 
 ## 🔗 Connect with Me
 
-Feel free to connect or message me here:  
-[LinkedIn – Hasan Kamran](https://www.linkedin.com/in/hasankamran1)
+### Feel free to connect or message me here:  
+#### [LinkedIn – Hasan Kamran](https://www.linkedin.com/in/hasankamran1)
 
 ---
