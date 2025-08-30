@@ -21,16 +21,17 @@ I’m aiming to complete the entire challenge, documenting each level as I go.
 
 ## 🧠 New to Linux? Read This First  
 
-If you're thinking about taking on Bandit and you're brand new to Linux, here's a few quick tips based on my experience so far:
+### If you're thinking about taking on Bandit and you're brand new to Linux, here's some tips based on my experience so far:
 
 - **Don’t panic** when the terminal looks empty, or and output looks confusing. That’s normal.
 - **Use `man`, `--help`, or Google** to understand commands. You don’t need to memorise everything.
 - **Get comfortable with the basics**: `ls`, `cd`, `cat`, `find`, `file`, and `grep` will take you far.
-- **Be curious.** If something doesn’t work, figure out *why* - that’s how you learn.
-- **Make notes as you go.** When you finally crack the code with a command, put it into a Word file
-or note, or just make an entire GitHub repo like I did :)
-- **Try Ubuntu on WSL if you're on Windows** — it gives you a real Linux environment right inside Windows, so you can run Linux commands and tools without needing a separate Linux machine.
-- **Finally, before you start, I highly recommend watching this guide to mastering Linux man pages. It will be priceless throughout the challenge:** [Mastering Linux man pages (YouTube)](https://www.youtube.com/watch?v=RzAkjX_9B7E)
+- **Make notes as you go.** When you finally crack the code with a command, make a note.
+- **Try Ubuntu on WSL if you're on Windows** — it gives you a real Linux environment right inside Windows.
+
+**Finally, before you start, I highly recommend watching this guide to mastering Linux man pages. It will be priceless throughout the challenge:**
+
+[Mastering Linux man pages (YouTube)](https://www.youtube.com/watch?v=RzAkjX_9B7E)
 
 ---
 
