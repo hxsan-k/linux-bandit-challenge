@@ -79,11 +79,11 @@ chmod 755 /var/spool/bandit24/foo/myscript.sh
 ```
 Here’s what’s happening step by step:
 
-- `echo` → writes the script content into a file.
-- `#!/bin/bash` → ensures the script runs with bash.
-- `cat /etc/bandit_pass/bandit24 > /tmp/mysecret` → copies the password into /tmp/mysecret when executed.
-- `> /var/spool/bandit24/foo/myscript.sh` → sends the echo output into the script file.
-- `chmod 755` → ensures cron (and others) can read + execute the script.
+- `echo` → writes the script content into a file
+- `#!/bin/bash` → ensures the script runs with bash
+- `cat /etc/bandit_pass/bandit24 > /tmp/mysecret` → copies the password into /tmp/mysecret when executed
+- `> /var/spool/bandit24/foo/myscript.sh` → sends the echo output into the script file
+- `chmod 755` → ensures cron (and others) can read + execute the script
 
 ---
 
