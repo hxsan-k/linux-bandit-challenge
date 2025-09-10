@@ -43,9 +43,13 @@ But key itself isn’t directly usable; the SSH session initially **closes immed
     ```
     You should now be in a **normal bash shell** as bandit26.  
 
-6. Explore and retrieve the password:
-    Check current directory: `ls`
-    Read the password file: `cat /etc/bandit_pass/bandit26`  
+6. **Retrieve the password as usual:**
+    - Check current directory using `ls`
+    - Read the password file:
+    ```bash
+    cat /etc/bandit_pass/bandit26
+    ```
+       
     You now have Bandit26’s password, which you can safely save locally (unless you prefer repeating steps 1-5 ;)).  
 
 ---
