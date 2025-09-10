@@ -4,36 +4,62 @@
 
 ## 🎯 Goal  
 
-Retrieve the Bandit26 key file from bandit25’s home directory.  
-There’s no tricks here. This is just preparation for the next level, where things get a bit *strange*.
+Here, you would use the **Bandit26 SSH key** from Bandit25 to log in and retrieve Bandit26’s password...
+But key itself isn’t directly usable; the SSH session initially **closes immediately**, which is part of the puzzle. You need to manipulate the terminal to proceed.  
 
 ---
 
 ## 🛠 Commands Used  
 
-- `ls` – List files in a directory  
-- `cat` – Read the key file  
+- `ssh` – Log in using the SSH key  
+- `ls` – List files and directories  
+- `cat` – Read password files  
+- `vi` – Break out of the restricted shell into a normal bash shell  
 
 ---
 
 ## 🚀 How to Solve  
 
-1. Log in as bandit25:  
-`ssh bandit25@localhost -p 2220`  
+1. **Run the SSH command with the key:**  
+    ```bash
+    ssh bandit26@localhost -i bandit26.sshkey
+    ``` 
+    Initially, the connection closes immediately.
+  
+2. **Make the terminal window on your machine ***small vertically*** so the `--More--` prompt appears when connecting.**
 
-2. Check the home directory for the key:  
-`ls`  
+3. **Run the **same SSH command again**, now with the terminal small enough to trigger `--More--`.**
 
-- You should see `bandit26.sshkey`.  
+    When `--More--` appears, press **`v`** to open the VI shell.
 
-3. Display the contents of the key file:  
-`cat bandit26.sshkey`  
+4. **Inside VI, set the shell to bash using the following command:**  
+    ```bash
+    :set shell=/bin/bash
+    ```
 
-- The terminal will show the key starting with `-----BEGIN RSA PRIVATE KEY-----` and ending with `-----END RSA PRIVATE KEY-----`.  
+5. **Run the shell:**
+    ```bash
+    :shell
+    ```
+    You should now be in a **normal bash shell** as bandit26.  
 
-4. Copy **all of the contents** from the terminal and save it on your **local machine** in a file, for example `bandit26.sshkey`.  
+6. Explore and retrieve the password:
+    Check current directory: `ls`
+    Read the password file: `cat /etc/bandit_pass/bandit26`  
+    You now have Bandit26’s password, which you can safely save locally (unless you prefer repeating steps 1-5 ;)).  
 
-5. Change the permissions on your local copy so it is secure and usable:  
-`chmod 600 bandit26.sshkey`  
+---
 
-- Now the key file is ready to use for logging into Bandit26 in the next level.  
+## 💡 Bonus Tips  
+
+- Ensure your terminal window is small enough to trigger the `--More--` prompt; the trick won’t work in a full-height terminal.  
+- Pressing `v` in the pager always opens VI if available, letting you escape restricted shells.  
+- Inside VI, `:set shell=/bin/bash` followed by `:shell` is a **general trick** for escaping some restricted environments.  
+
+---
+
+## 🧠 Why This Level Matters  
+
+- Teaches **working with restricted SSH shells**.  
+- Demonstrates how terminal behavior (`--More--` prompts) can be used to **break out into a full shell**.  
+- Reinforces the value of **creative problem-solving** when normal commands appear blocked.  
