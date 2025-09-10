@@ -4,7 +4,7 @@
 
 ## 🎯 Goal  
 
-Retrieve the password for **bandit30** from a Git repository. Unlike previous levels where the password was hidden in old commits, this time the hint says *“no passwords in production”*, so the credentials are stored in a different Git branch.  
+We need to retrieve the password for **bandit30** from a Git repository. Unlike previous levels where the password was hidden in old commits, this time the hint says *“no passwords in production”*, so the credentials are stored in a different Git branch.  
 
 ---
 
@@ -19,7 +19,7 @@ Retrieve the password for **bandit30** from a Git repository. Unlike previous le
 
 ## 🚀 How to Solve  
 
-**1. Like previous steps, clone the repository into a temporary directory**  
+**1. Like previous steps, clone the repository into a temporary directory which you create**  
 
   ```bash
   mkdir /tmp/myrepo29  
