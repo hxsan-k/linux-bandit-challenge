@@ -18,13 +18,13 @@ Find the password which is stored in the only ***human-readable*** file in the `
 
 ## 🚀 How to Solve
 
-1. First, go into the `inhere` directory:
+### 1. First, go into the `inhere` directory:
 
 ```bash
 cd inhere
 ```
 
-2. List the files:
+### 2. List the files:
 
 ```bash
 ls
@@ -32,19 +32,19 @@ ls
 
 You’ll see a list of different files like `-file00,` `-file01,` etc.
 
-3. Use the `file` command to check which one is human-readable (look for "ASCII text"):
+### 3. Use the `file` command to check which one is human-readable (look for "ASCII text"):
 
 ```bash
 file ./*
 ```
 
-4. Once you find the ASCII text file, display its contents:
+### 4. Once you find the ASCII text file, display its contents:
 
 ```bash
 cat ./-file0X
 ```
 
-(Replace `-file0X` with the actual file name.)
+(Replace `-file0X` with the actual file name)
 
 ## 💡 Bonus Tips
 
