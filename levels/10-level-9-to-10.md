@@ -18,7 +18,7 @@ The password is hidden in the file `data.txt` and appears as a **human-readable 
 
 ## 🚀 How to Solve
 
-1. First, check what's inside the file (optional):
+### 1. First, check what's inside the file (optional):
 
 ```bash
 cat data.txt
@@ -26,7 +26,7 @@ cat data.txt
 
 The file is mostly unreadable, which means it's likely a binary file. So we need to extract only the **readable parts.**
 
-2. Use `strings` to pull out all human-readable content:
+### 2. Use `strings` to pull out all human-readable content:
 
 ```bash
 strings data.txt
@@ -34,7 +34,7 @@ strings data.txt
 
 This shows just the readable ASCII text while ignoring the binary junk.
 
-3. Now, filter for lines containing at least 2 `=` symbols (since the password appears after several `=` signs):
+### 3. Now, filter for lines containing at least 2 `=` symbols (since the password appears after several `=` signs):
 
 ```bash
 strings data.txt | grep ==
