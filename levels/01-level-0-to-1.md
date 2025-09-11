@@ -22,19 +22,19 @@ The password for `bandit1` is stored in a file called `readme` located in the ho
 
 ## 🚀 How to Solve
 
-1. Use `ls` to see what files are in your current directory:
+### 1. Use `ls` to see what files are in your current directory:
 
-    ```bash
-    ls
-    ```
+```bash
+ls
+```
 
-2. You’ll see a file named `readme`. Use `cat` to read its contents:
+### 2. You’ll see a file named `readme`. Use `cat` to read its contents:
 
-    ```bash
-    cat readme
-    ```
+```bash
+cat readme
+```
 
-3. The output will be the password you need to log into **Level 1 ** (`bandit1`).
+### 3. The output will be the password you need to log into **Level 1 ** (`bandit1`).
 
 ---
 
@@ -49,3 +49,4 @@ The password for `bandit1` is stored in a file called `readme` located in the ho
 
 This is your first taste of basic Linux file navigation.  
 Knowing how to explore directories and read file contents is essential for working with any system.
+
