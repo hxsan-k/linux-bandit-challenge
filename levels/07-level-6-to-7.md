@@ -23,7 +23,7 @@ We are given some key details which will help us solve this. The file is:
 
 ## 🚀 How to Solve
 
-1. Since the file could be anywhere, we’ll start at the root directory:
+### 1. Since the file could be anywhere, we’ll start at the root directory:
 
 ```bash
 find / -type f -user bandit7 -group bandit6 -size 33c 2>/dev/null
@@ -43,7 +43,7 @@ find / -type f -user bandit7 -group bandit6 -size 33c 2>/dev/null
 
 > 📝 Note: The `2>/dev/null` part isn't required and the command still works without it. It just hides all the *"Permission denied"* messages from folders you don’t have access to, making the output easier to read.
 
-2. Once you find the correct file, use `cat` to read the password:
+### 2. Once you find the correct file, use `cat` to read the password:
 
 ```bash
 cat /path/to/the/file
@@ -56,3 +56,4 @@ cat /path/to/the/file
 ## 🧠 Why This Level Matters
 
 This level is a great intro to more advanced file searches. It teaches you how to filter files based on multiple conditions which is useful when managing systems, tracking down logs, or doing security audits.
+
