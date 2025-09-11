@@ -17,7 +17,7 @@ The password is hidden in `data.txt`, which contains **Base64‑encoded** text.
 
 ## 🚀 How to Solve
 
-1. `cat` the file to confirm it looks like Base64:
+### 1. `cat` the file to confirm it looks like Base64:
 
 ```bash
 cat data.txt
@@ -25,7 +25,7 @@ cat data.txt
 
 You’ll see long lines ending with `=` or `==`, a classic Base64 tell‑tale.
 
-2. Print the result again but a piping symbol to attach the base64 decode command:
+### 2. Print the result again but a piping symbol to attach the base64 decode command:
 
 ```bash
 cat data.txt | base64 -d
