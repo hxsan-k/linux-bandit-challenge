@@ -24,7 +24,7 @@ The password for the next level is stored in the file `data.txt`, which is actua
 
 ## 🚀 How to Solve
 
-1. First, create a safe working space:
+### 1. First, create a safe working space:
 
 ```bash
 cd /tmp
@@ -32,20 +32,20 @@ mktemp -d
 cd <your-temp-folder>
 ```
 
-2. Copy the data over and rename it:
+### 2. Copy the data over and rename it:
 
 ```bash
 cp /home/bandit12/data.txt .
 mv data.txt data.hex
 ```
 
-3. Reverse the hexdump back to binary:
+### 3. Reverse the hexdump back to binary:
 
 ```bash
 xxd -r data.hex data.bin
 ```
 
-4. Now, start inspecting the file to figure out its type:
+### 4. Now, start inspecting the file to figure out its type:
 
 ```bash
 file data.bin
@@ -53,7 +53,7 @@ file data.bin
 
 This might say something like: `gzip compressed data`
 
-5. Depending on the output, decompress using the correct tool. Rename it after each step to keep things clear:
+### 5. Depending on the output, decompress using the correct tool. Rename it after each step to keep things clear:
 
 ```bash
 
@@ -62,7 +62,7 @@ zcat data.gz > data1
 file data1
 ```
 
-6. Repeat this process: inspect the file with `file`, then apply the appropriate decompression command.
+### 6. Repeat this process: inspect the file with `file`, then apply the appropriate decompression command.
 
 Examples:
 
