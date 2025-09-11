@@ -18,24 +18,26 @@ Find the password for **bandit4** which is stored in a **hidden file** inside th
 
 ## 🚀 How to Solve
 
-1. First, move into the `inhere` directory:
+### 1. First, move into the `inhere` directory:
 ```bash
 cd inhere
 ```
 
-2. Run `ls` – you won’t see anything as the file is hidden.
+### 2. Run `ls` 
 
-3. Use the `-a` flag to reveal hidden files:
+You won’t see anything as the file is hidden.
+
+### 3. Use the `-a` flag to reveal hidden files:
 ```bash
 ls -a
 ```
 
-You’ll see something like:
+You’ll see something like this on your screen:
 ```
 .  ..  .hiddenfile
 ```
 
-4. Use `cat` to view the contents of the hidden file:
+### 4. Use `cat` to view the contents of the hidden file:
 ```bash
 cat .hiddenfile
 ```
@@ -55,3 +57,4 @@ The output will be the password for **Level 4**.
 
 ## 🧠 Why This Level Matters
 Learning how to deal with hidden files is important for navigating Linux systems, especially when working with config files or debugging odd issues.
+
