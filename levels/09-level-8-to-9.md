@@ -17,7 +17,7 @@ The password for the next level is stored in the file `data.txt` and is the **on
 
 ## 🚀 How to Solve
 
-1. First, take a look at the file (optional):
+### 1. First, take a look at the file (optional):
 
 ```bash
 cat data.txt
@@ -25,7 +25,7 @@ cat data.txt
 
 You’ll see a bunch of repeated-looking lines.
 
-2. To find the line that only appears **once**, use a combination of `sort` and `uniq`:
+### 2. To find the line that only appears **once**, use a combination of `sort` and `uniq`:
 
 ```bash
 sort data.txt | uniq -u
@@ -53,3 +53,4 @@ sort data.txt | uniq -u | wc -l
 ## 🧠 Why This Level Matters
 
 This level teaches how to combine commands using [**piping**](https://www.freecodecamp.org/news/linux-terminal-piping-and-redirection-guide/), a powerful way to work with [**data streams**](https://davidlares.medium.com/basic-data-streams-in-linux-b592a64518dd). Being able to filter, sort, and isolate useful information is vital in scripting, log analysis, and day-to-day command-line work. It’s a taste of what text processing in Linux is all about.
+
