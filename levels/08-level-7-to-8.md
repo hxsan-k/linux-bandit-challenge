@@ -17,7 +17,7 @@ The password for the next level is stored in the file `data.txt`, **next to the 
 
 ## 🚀 How to Solve
 
-1. The file `data.txt` is already in the current directory. We’re looking for the line that contains the word `millionth`.
+### 1. The file `data.txt` is already in the current directory. We’re looking for the line that contains the word `millionth`.
 
 Use `grep` to filter only the relevant line:
 
@@ -27,7 +27,7 @@ grep millionth data.txt
 
 This returns the line containing the word `millionth` and the password right next to it.
 
-2. Alternatively, if you want to see the whole file first (not necessary here):
+### 2. Alternatively, if you want to see the whole file first (not necessary here):
 
 ```bash
 cat data.txt
