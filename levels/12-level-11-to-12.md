@@ -17,7 +17,7 @@ The password for the next level is stored in `data.txt`, where all **letters** (
 
 ## 🚀 How to Solve
 
-1. Start by displaying the contents of the file:
+### 1. Start by displaying the contents of the file:
 
 ```bash
 cat data.txt
@@ -25,7 +25,7 @@ cat data.txt
 
 You’ll see a string of text that looks random because it’s ROT13 encoded. It’s not encryption, just a basic letter substitution where each letter is shifted 13 places forward.
 
-2. To decode it, use the tr (translate) command:
+### 2. To decode it, use the tr (translate) command:
 
 ```bash
 cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
@@ -66,6 +66,8 @@ tr 'A-Za-z' 'N-ZA-Mn-za-m'
 
 📌 In short, it performs a ROT13 transformation, which is a simple form of letter substitution.
 
+---
+
 ## 💡 Bonus Tips
 - ROT13 is its own reverse. If you run the same command again on the decoded string, it’ll go back to the scrambled version.
 - This method isn’t used in real-world cryptography, but it’s handy for understanding how basic character substitutions work.
@@ -73,6 +75,8 @@ tr 'A-Za-z' 'N-ZA-Mn-za-m'
   - Convert lowercase to uppercase
   - Remove or squeeze repeated characters
   - Replace or delete specific characters in a stream
+
+---
  
 ## 🧠 Why This Level Matters
 - Encourages recognising obfuscation (ROT13) and using the right tools to reverse it
