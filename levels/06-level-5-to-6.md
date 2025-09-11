@@ -19,13 +19,13 @@ Find the password for the next level, which is stored in a file **somewhere in t
 
 ## 🚀 How to Solve
 
-1. First, go into the `inhere` directory:
+### 1. First, go into the `inhere` directory:
 
 ```bash
 cd inhere
 ```
 
-2. Use `find` to locate a file that matches all the criteria:
+### 2. Use `find` to locate a file that matches all the criteria:
 
 ```bash
 find . -type f -size 1033c ! -executable
@@ -36,7 +36,7 @@ find . -type f -size 1033c ! -executable
 - `-size 1033c` – File must be exactly 1033 bytes  
 - `! -executable` – File must not be executable  
 
-3. Confirm the file is human-readable by using:
+### 3. Confirm the file is human-readable by using:
 
 ```bash
 file ./filename
@@ -44,7 +44,7 @@ file ./filename
 
 (Replace `filename` with the actual result from `find`.)
 
-4. If it says "ASCII text," display the contents:
+### 4. If it says "ASCII text," display the contents:
 
 ```bash
 cat ./filename
