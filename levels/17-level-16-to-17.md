@@ -21,23 +21,23 @@ Some ports echo data back, others expect SSL/TLS. Only **one** will actually han
 
 ## 🚀 How to Solve  
 
-1. Scan for open ports in the range 31000–32000:  
+### 1. Scan for open ports in the range 31000–32000:  
 ```bash
 nmap -p 31000-32000 localhost
 ```
 
 Note down open the ports for the next step.
 
-2. Test each open port with netcat:  
+### 2. Test each open port with netcat:  
 ```bash
 nc localhost <port>
 ```
 
-Type in the current password each time and press enter.  
-If the port just echoes the same thing back, ignore it.  
-If it behaves strangely (connection hangs or replies with something else, that's your clue it may be SSL/TLS)
+- Type in the current password each time and press enter.  
+- If the port just echoes the same thing back, ignore it.  
+- If it behaves strangely (connection hangs or replies with something else, that's your clue it may be SSL/TLS)
 
-3. Check remaining ports for SSL/TLS servers using openssl:  
+### 3. Check remaining ports for SSL/TLS servers using openssl:  
 ```bash
 openssl s_client -connect localhost:<port>
 ```
@@ -45,17 +45,17 @@ openssl s_client -connect localhost:<port>
 Paste in the current password when connected.  
 One of these will finally give you something useful — the private SSH key for Bandit17.  
 
-4. Save the private key:  
+### 4. Save the private key:  
 ```bash
 nano bandit17_key
 ```
 
-6. Fix the key permissions (otherwise SSH will refuse it):  
+### 5. Fix the key permissions (otherwise SSH will refuse it):  
 ```bash
 chmod 400 bandit17_key
 ```
 
-8. Log in to Bandit17 (the next level) using the key:  
+### 6. Log in to Bandit17 (the next level) using the key:  
 ```bash
 ssh -i [file path to bandit17_key] bandit17@bandit.labs.overthewire.org -p 2220
 ```
