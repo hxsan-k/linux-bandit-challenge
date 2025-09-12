@@ -18,25 +18,27 @@ The password for the next level can be obtained by sending the current level’s
 
 ## 🚀 How to Solve  
 
-1. Log in to Bandit level 15:
+### 1. Log in to Bandit level 15:
 
 ```bash
 ssh bandit15@bandit.labs.overthewire.org -p 2220  
 ```
 
-2. Ensure you have the password for Bandit User 15 (which you just logged in with).
+### 2. Ensure you have the password for Bandit User 15 (which you just logged in with).
 
-3. Connect to the SSL/TLS service running on port 30001.
+### 3. Connect to the SSL/TLS service running on port 30001.
 
 - According to the man page for `openssl s_client`, the syntax is the following:
-  - `openssl s_client [-connect host:port]`
+```bash 
+openssl s_client [-connect host:port]
+```
 
 - This gives us:
 ```bash
 openssl s_client -connect localhost:30001  
 ```
 
-4. When prompted, paste the current level’s password and press Enter.  
+### 4. When prompted, paste the current level’s password and press Enter.  
    The server will then send a `Correct!` message along with the password for the next level.
    
 ---
