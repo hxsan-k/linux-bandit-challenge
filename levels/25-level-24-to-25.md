@@ -20,38 +20,40 @@ The only way to get the correct PIN is by **brute-forcing all 10,000 combination
 
 ## 🚀 How to Solve  
 
-1. Create a directory for your scripts (optional):
-    ```bash
-    mkdir /tmp/scriptdir
-    ```
-    ```bash
-    cd /tmp/scriptdir
-    ```
-2. Write a script to generate all password+PIN combinations:
-    ```bash
-    #!/bin/bash
-    
-    for i in {0000..9999}  
+### 1. Create a directory for your scripts (optional):
+```bash
+mkdir /tmp/scriptdir
+```
+```bash
+cd /tmp/scriptdir
+```
+
+### 2. Write a script to generate all password+PIN combinations:
+```bash
+#!/bin/bash
+
+for i in {0000..9999}  
     do
-         echo "<Password for Bandit24> $i" >> list.txt
-    done
-    ```
-    Replace `<Password for Bandit24>` with your **current Bandit24 password**. This script will create a file `list.txt` containing all 10,000 possible combinations.
+        echo "<Password for Bandit24> $i" >> list.txt
+done
+```
+Replace `<Password for Bandit24>` with your **current Bandit24 password**. This script will create a file `list.txt` containing all 10,000 possible combinations.
 
-3. Make the script executable and run it:  
-    ```bash
-    chmod +x generate_list.sh
-    ```
-    ```bash
-    ./generate_list.sh
-    ```
-4. Send all combinations to the daemon on port 30002:  
-    ```bash
-    cat list.txt | nc localhost 30002
-    ``` 
-   The daemon will process each line sequentially. Only the correct combination will return a message like **“Correct”** and reveal the **Bandit25 password**.
+### 3. Make the script executable and run it:  
+```bash
+chmod +x generate_list.sh
+```
+```bash
+./generate_list.sh
+```
 
-5. Watch the output and grab the password for Bandit25!
+### 4. Send all combinations to the daemon on port 30002:  
+```bash
+cat list.txt | nc localhost 30002
+``` 
+The daemon will process each line sequentially. Only the correct combination will return a message like **“Correct”** and reveal the **Bandit25 password**.
+
+### 5. Watch the output and grab the password for Bandit25!
 
 ---
 
