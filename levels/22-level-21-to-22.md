@@ -20,21 +20,21 @@ Your task: figure out what it’s doing and grab the password for the next level
 
 ## 🚀 How to Solve  
 
-1. Check the cron jobs directory with
+### 1. Check the cron jobs directory with
    ```bash
    ls /etc/cron.d/
    ```
-2. Inspect the relevant cronjob file with
+### 2. Inspect the relevant cronjob file with
    ```bash
    cat /etc/cron.d/cronjob_bandit22
    ```
-3. Follow the script path to see what it does using
+### 3. Follow the script path to see what it does using
    ```bash
    cat /usr/bin/cronjob_bandit22.sh
    ```
    The script takes the current username, hashes it, and writes the password to a temporary file based on that hash.
    
-5. Finally, read the file where the password is stored with
+### 4. Finally, read the file where the password is stored with
    ```bash
    cat /tmp/<filename_here>
    ```
