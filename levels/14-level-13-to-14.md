@@ -18,7 +18,7 @@ Use the **private SSH key** stored in `sshkey.private` to log in to the next lev
 
 ## 🚀 How to Solve
 
-1. Try logging in using the SSH key:
+### 1. Try logging in using the SSH key:
 ```bash
 ssh -i sshkey.private bandit14@localhost -p 2220
 ```
@@ -28,7 +28,7 @@ You’ll likely see this error:
 
 That’s Linux being overprotective (but for good reason).
 
-2. Check the permissions on the key:
+### 2. Check the permissions on the key:
 ```bash
 ls -hl
 ```
@@ -44,7 +44,7 @@ That means:
 
 That’s way too open for a private key.
 
-3. Fix it with:
+### 3. Fix it with:
 ```bash
 chmod 400 sshkey.private
 ```
@@ -57,9 +57,9 @@ Which means:
   - ❌ No one can **write to** or **execute** it  
   - 🔒 Everyone else is completely blocked
 
-4. Try the SSH command again — it should let you in now.
+### 4. Try the SSH command again — it should let you in now.
 
-5. Find the password using `cat`, which is stored in /etc/bandit_pass/bandit14
+### 5. Find the password using `cat`, which is stored in /etc/bandit_pass/bandit14
 
 ---
 
