@@ -17,27 +17,27 @@ You’ll find a special program (setuid binary) in your home directory. Run it w
 ---
 
 ## 🚀 Steps  
-1. Log into bandit19:  
+### 1. Log into bandit19:  
    ```bash
    ssh bandit19@bandit.labs.overthewire.org -p 2220
    ```
    (Password is from previous level)  
 
-2. List the files in your home directory:  
+### 2. List the files in your home directory:  
    ```bash
    ls
    ```
    You should see something like:  
    `bandit20-do`  
 
-3. Run the program without arguments to see what it does:  
+### 3. Run the program without arguments to see what it does:  
    ```bash
    ./bandit20-do
    ```
    Expected output:  
    `Run a command as another user. Example: ./bandit20-do id ` 
 
-4. Use it to read the password file for bandit20:  
+### 4. Use it to read the password file for bandit20:  
    ```bash
    ./bandit20-do cat /etc/bandit_pass/bandit20
    ``` 
