@@ -18,23 +18,27 @@ The binary reads a line of text from the connection, checks if it matches the cu
 
 ## 🚀 How to Solve  
 
-1. Open a terminal and start a netcat listener on a port above 1024 (e.g., 4444) to act as the server:
+### 1. Open a terminal and start a netcat listener on a port above 1024 (e.g., 4444) to act as the server:
 ```bash
    nc -lvp 4444 
 ```
-2. In the listener terminal, when a connection comes in, manually type (or paste) the bandit20 password:
+### 2. In the listener terminal, when a connection comes in, manually type (or paste) the bandit20 password:
 ```bash
    cat /etc/bandit_pass/bandit20
 ```
-3. In a second terminal, run the setuid binary and point it to the port your listener is using:
+### 3. In a second terminal, run the setuid binary and point it to the port your listener is using:
 ```bash
   ./suconnect 4444
 ```
-4. Once the password is verified, the binary will send the bandit21 password back through the same connection. This will appear in your listener terminal.  
+### 4. Once the password is verified, the binary will send the bandit21 password back through the same connection. 
 
-5. Copy the bandit21 password from the listener terminal; this is the credential for the next level  
+This will appear in your listener terminal.  
 
-6. Close the netcat listener once you have the password 
+### 5. Copy the bandit21 password from the listener terminal.
+
+This is the credential for the next level.
+
+### 6. Close the netcat listener once you have the password 
 ---
 
 ## 🔢 Quick Explanation: setuid binary & client/server  
