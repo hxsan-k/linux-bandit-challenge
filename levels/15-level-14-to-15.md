@@ -17,13 +17,13 @@ Submit the password for the current level (Bandit14) to port `30000` on `localho
 
 ## 🚀 How to Solve
 
-1. **Login with the bandit14 username**:
+### 1. Login with the bandit14 username:
 
 ```bash
 ssh bandit14@bandit.labs.overthewire.org -p 2220
 ```
 
-2. To submit the password to port 30000 on localhost (like the task requires), run:
+### 2. To submit the password to port 30000 on localhost (like the task requires), run:
 
 ```bash
 nc localhost 30000
@@ -31,7 +31,7 @@ nc localhost 30000
 
 This command sends the password directly over a TCP connection to port 30000, and the server responds with the password for the next level.
 
-3. A blinking cursor will appear on the next line.
+### 3. A blinking cursor will appear on the next line.
 
 Here, enter the password of the previous level (same one you used to login with the bandit14 username):
 
@@ -39,7 +39,7 @@ Here, enter the password of the previous level (same one you used to login with 
 [enter the password]
 ```
 
-4. If entered correctly, you will see the following message:
+### 4. If entered correctly, you will see the following message:
 
 ```bash
 [password you entered for the previous level]
