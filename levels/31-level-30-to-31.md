@@ -18,37 +18,32 @@ Retrieve the password for **bandit31** by inspecting the Git repository. Unlike 
 
 ## 🚀 How to Solve  
 
-**1. Clone the repository**  
-
-Clone the repo into a temporary directory like before:  
-
-  ```bash
-  git clone ssh://bandit30-git@localhost:2220/home/bandit30-git/repo  
-  ```
+### 1. Clone the repo into a temporary directory like before:
+```bash
+git clone ssh://bandit30-git@localhost:2220/home/bandit30-git/repo  
+```
 
 Enter the **bandit30 password** when prompted.  
 
-**2. Move into the repo**  
+### 2. Move into the repo:
+```bash
+cd repo  
+```
 
-  ```bash
-  cd repo  
-  ```
-
-**3. Look for tags**  
-  
-  ```bash
-  git tag  
-  ```
+### 3. Look for tags: 
+```bash
+git tag  
+```
 
 This lists tags associated with the repo.  
 
-**4. Inspect the tag contents**  
+### 4. Inspect the tag contents
 
 Pick the tag you found and run:  
 
-  ```bash
-  git show <tagname>    
-  ```
+```bash
+git show <tagname>    
+```
 
 One of the tags reveals the **password for bandit31**.  
 
