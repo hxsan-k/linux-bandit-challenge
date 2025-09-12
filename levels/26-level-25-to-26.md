@@ -20,37 +20,37 @@ But key itself isn’t directly usable; the SSH session initially **closes immed
 
 ## 🚀 How to Solve  
 
-1. **Run the SSH command with the key:**  
-    ```bash
-    ssh bandit26@localhost -i bandit26.sshkey
-    ``` 
-    Initially, the connection closes immediately.
+### 1. Run the SSH command with the key:
+```bash
+ssh bandit26@localhost -i bandit26.sshkey
+``` 
+Initially, the connection closes immediately.
   
-2. **Make the terminal window on your machine ***small vertically*** so the `--More--` prompt appears when connecting.**
+### 2. Make the terminal window on your machine ***small vertically*** so the `--More--` prompt appears when connecting.
 
-3. **Run the **same SSH command again**, now with the terminal small enough to trigger `--More--`.**
+### 3. Run the *same SSH command again*, now with the terminal small enough to trigger `--More--`.
 
-    When `--More--` appears, press **`v`** to open the VI shell.
+When `--More--` appears, press **`v`** to open the VI shell.
 
-4. **Inside VI, set the shell to bash using the following command:**  
-    ```bash
-    :set shell=/bin/bash
-    ```
+### 4. Inside VI, set the shell to bash using the following command:
+```bash
+:set shell=/bin/bash
+```
 
-5. **Run the shell:**
-    ```bash
-    :shell
-    ```
-    You should now be in a **normal bash shell** as bandit26.  
+### 5. Run the shell:
+```bash
+:shell
+```
+You should now be in a **normal bash shell** as bandit26.  
 
-6. **Retrieve the password as usual:**
-    - Check current directory using `ls`
-    - Read the password file:
-    ```bash
-    cat /etc/bandit_pass/bandit26
-    ```
-       
-    You now have Bandit26’s password, which you can safely save locally (unless you prefer repeating steps 1-5 ;)).  
+### 6. Retrieve the password as usual:
+- Check current directory using `ls`
+- Read the password file:
+```bash
+cat /etc/bandit_pass/bandit26
+```
+   
+You now have Bandit26’s password, which you can safely save locally (unless you prefer repeating steps 1-5 ;)).  
 
 ---
 
