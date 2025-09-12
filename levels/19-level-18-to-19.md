@@ -19,7 +19,7 @@ The tricky part? Someone has messed with `.bashrc` so that if you try to log in 
 
 ## 🚀 How to Solve  
 
-1. The first challenge is that `.bashrc` automatically logs you out when using SSH.
+### 1. The first challenge is that `.bashrc` automatically logs you out when using SSH.
 
 To bypass this, you can use a command that runs **directly on login** instead of opening a shell:  
 ```bash
@@ -28,14 +28,14 @@ ssh bandit18@bandit.labs.overthewire.org -p 2220 ls -l
 
 This lets you see the files in the home directory without triggering the logout.  
 
-2. Confirm that the `readme` file exists using the same command above.
+### 2. Confirm that the `readme` file exists using the same command above.
    
 You should see something like:  
 ```bash
 -rw-r--r-- 1 bandit18 bandit18 33 Aug 29 20:00 readme
 ```
 
-3. Read the contents of `readme` to get the password:  
+### 3. Read the contents of `readme` to get the password:  
 ```bash
 ssh bandit18@bandit.labs.overthewire.org -p 2220 cat readme
 ```
