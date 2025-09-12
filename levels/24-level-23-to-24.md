@@ -22,23 +22,23 @@ This is your first real shell script challenge, but don't worry, it's not nearly
 
 ## 🚀 How to Solve  
 
-1. Look at the cron configuration for `bandit24` in `/etc/cron.d`:  
+### 1. Look at the cron configuration for `bandit24` in `/etc/cron.d`:  
    ```bash
    cat /etc/cron.d/cronjob_bandit24
    ```
    You’ll see it runs a script every minute as `bandit24`.  
 
-2. Check what that script is doing:  
+### 2. Check what that script is doing:  
    ```bash
    cat /usr/bin/cronjob_bandit24.sh
    ```  
-   You’ll notice it executes any file placed in `/var/spool/bandit24/foo`.
-    
-   Then, it deletes the script after running it.  
+   You’ll notice it executes any file placed in `/var/spool/bandit24/foo`. Then, it deletes the script after running it.  
 
-3. This means you can drop your own script into `/var/spool/bandit24/foo`, and it will run as `bandit24`. Since `bandit24` has access to `/etc/bandit_pass/bandit24`, you can make your script copy that password into a world-readable place (like `/tmp`).  
+   This means you can drop your own script into: `/var/spool/bandit24/foo` and it will run as `bandit24`. 
+   
+   Since `bandit24` has access to `/etc/bandit_pass/bandit24`, you can make your script copy that password into a world-readable place (like `/tmp`).  
 
-4. Write your script:
+### 3. Write your script:
    ```bash  
    #!/bin/bash
    
@@ -46,12 +46,12 @@ This is your first real shell script challenge, but don't worry, it's not nearly
    ```  
    Save this as `/var/spool/bandit24/foo/myscript.sh`.  
 
-5. Make it executable **immediately after saving** (the script might be deleted before you chmod it due to the *other* script that will run yours):  
+### 4. Make it executable **immediately after saving** (the script might be deleted before you chmod it due to the *other* script that will run yours):  
    ```bash
    chmod 755 /var/spool/bandit24/foo/myscript.sh
    ```
 
-6. Wait a minute for the cron job to run. Then check the file you wrote to:  
+### 5. Wait a minute for the cron job to run. Then check the file you wrote to:  
    ```bash
    cat /tmp/mysecret
    ```
