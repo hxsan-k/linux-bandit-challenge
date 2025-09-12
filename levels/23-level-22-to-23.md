@@ -21,15 +21,15 @@ Your task: understand what the script does and use it to get the next password.
 
 ## 🚀 How to Solve  
 
-1. List the cron jobs with:
+### 1. List the cron jobs with:
    ```bash
    ls /etc/cron.d/
    ```
-2. Inspect the cronjob for this level using:
+### 2. Inspect the cronjob for this level using:
    ```bash
    cat /etc/cron.d/cronjob_bandit23
    ```
-3. Follow the script path with:
+### 3. Follow the script path with:
    ```bash
    cat /usr/bin/cronjob_bandit23.sh
    ``` 
@@ -40,13 +40,16 @@ Your task: understand what the script does and use it to get the next password.
      - Uses that hash as the filename in `/tmp`  
      - Copies the user’s password file (`/etc/bandit_pass/<username>`) into that hash-named file
        
-4. Reproduce what the script does manually:  
+### 4. Reproduce what the script does manually:  
    ```bash
    echo I am user bandit23 | md5sum | cut -d ' ' -f 1
    ```
    This gives you the hash (filename)
    
-5. Finally, read the password with `cat /tmp/<that_hash>`  
+### 5. Finally, read the password:
+   ```bash
+   cat /tmp/<that_hash>
+   ```
 
 ---
 
