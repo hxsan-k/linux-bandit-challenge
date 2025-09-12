@@ -19,48 +19,46 @@ We need to retrieve the password for **bandit30** from a Git repository. Unlike 
 
 ## 🚀 How to Solve  
 
-**1. Like previous steps, clone the repository into a temporary directory which you create**  
+### 1. Like previous steps, clone the repository into a temporary directory which you create:
 
-  ```bash
-  mkdir /tmp/myrepo29  
-  cd /tmp/myrepo29  
-  git clone ssh://bandit29-git@localhost:2220/home/bandit29-git/repo  
-  ```
-    
-  Enter the **bandit29 password** when prompted.  
+```bash
+mkdir /tmp/myrepo29  
+cd /tmp/myrepo29  
+git clone ssh://bandit29-git@localhost:2220/home/bandit29-git/repo  
+```
 
-**2. Inspect the README on the master branch**  
-    
-  ```bash
-  cd repo  
-  cat README.md  
-  ```
-    
-  It shows credentials, but the password field says `<no passwords in production!>`.  
+Enter the **bandit29 password** when prompted.  
 
-**3. Check available branches**  
-    
-  ```bash
-  git branch -a  
-  ```
-    
-  You’ll see extra branches such as `origin/dev` and `origin/sploits-dev`.  
+### 2. Inspect the README on the master branch:
+```bash
+cd repo  
+cat README.md  
+```
 
-**4. Switch to the development branch**  
+It shows credentials, but the password field says `<no passwords in production!>`.  
 
-  ```bash
-  git checkout origin/dev  
-  ```
-    
-  Now list the files and open `README.md` again.  
+### 3. Check available branches:
+```bash
+git branch -a  
+```
+  
+You’ll see extra branches such as `origin/dev` and `origin/sploits-dev`.  
 
-**5. Retrieve the password**  
+### 4. Switch to the development branch: 
 
-  ```bash
-  cat README.md  
-  ```
-    
-  Inside the `dev` branch, the README contains the actual password for **bandit30**. 🎉  
+```bash
+git checkout origin/dev  
+```
+  
+Now list the files and open `README.md` again.  
+
+### 5. Retrieve the password:  
+
+```bash
+cat README.md  
+```
+  
+Inside the `dev` branch, the README contains the actual password for **bandit30**. 🎉  
 
 ---
 
