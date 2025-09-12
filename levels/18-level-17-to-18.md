@@ -19,7 +19,7 @@ The password for Bandit18 is the **only line that has changed** between the two 
 
 ## 🚀 How to Solve  
 
-1. List the files to confirm they exist:  
+### 1. List the files to confirm they exist:  
 ```bash
 ls
 ```
@@ -29,7 +29,7 @@ You should see two files:
 passwords.old  passwords.new
 ```
 
-2. Compare the files using `diff`:  
+### 2. Compare the files using `diff`:  
 ```bash
 diff passwords.old passwords.new
 ```
@@ -41,14 +41,14 @@ The output will look something like this:
 > ZYXWVUTSRQPONMLKJIHGFEDCBA
 ```
 
-3. Understand the output and `diff` arrows:  
+### 3. Understand the output and `diff` arrows:  
 
 - `<` → line from the **first file** (`passwords.old`)  
 - `>` → line from the **second file** (`passwords.new`)  
 
 Since the password is in `passwords.new`, the line after `>` is the password for Bandit18.  
 
-4. Copy the line after `>` to use as your password for the next level.  
+### 4. Copy the line after `>` to use as your password for the next level.  
 
 ---
 
