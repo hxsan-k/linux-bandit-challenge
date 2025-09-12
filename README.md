@@ -1,21 +1,26 @@
 # Linux Bandit Challenge Walkthrough 🐧
 
-This repo contains my notes and solutions as I work through the OverTheWire Bandit wargame. The goal is to build practical Linux and command line skills from the ground up with no tech background.
+This repo contains my notes, solutions, and lessons learned from completing the OverTheWire Bandit wargame. This project’s goal was to build practical Linux and command line skills from scratch, starting with no prior tech background, and to serve as a guide for anyone else beginning their journey into Linux fundamentals.  
+
+By documenting each level, I’ve aimed to make the solutions clear, reproducible, and beginner-friendly, while also highlighting the key concepts you pick up along the way.
 
 ---
 
-## 📘 About the Challenge
+## 📘 About the Challenge  
 
-Bandit is made up of a series of levels that get progressively harder. Each one teaches something new, from basic file navigation to more advanced Linux tools.
-
-I’m aiming to complete the entire challenge, documenting each level as I go.
+- The goal of each level is to find the password (or key) that unlocks the next.  
+- Passwords are usually long strings of characters, but some levels use `ssh` private keys instead.  
+- Levels get progressively harder, covering everything from basic file navigation to more advanced Linux tools.  
+- The challenge is hands-on and incremental, designed to build confidence step by step as the puzzles grow more complex.
 
 ---
 
-## 📁 What’s in This Repo
+## 📁 What’s in This Repo  
 
-- `levels/` — Each file contains my notes, commands, and solutions for a Bandit level  
-- Explanations are written in a way that makes it easy to follow, especially if you’re new to Linux and bash
+- `levels/` — contains all Bandit walkthroughs, one file per level.
+- Each level write-up shows the step-by-step process I used to solve it.
+- Before checking solutions, attempt the level on your own and use each step as a hint in the right direction.  
+- The repo is organised so you can follow the progression of the challenge from start to finish.  
 
 ---
 
@@ -23,35 +28,37 @@ I’m aiming to complete the entire challenge, documenting each level as I go.
 
 ### If you're thinking about taking on Bandit and you're brand new to Linux, here's some tips based on my experience so far:
 
-- **Don’t panic** when the terminal looks empty, or and output looks confusing. That’s normal.
-- **Use `man`, `--help`, or Google** to understand commands. You don’t need to memorise everything.
+- **Don’t panic** when the terminal looks empty, or when the output looks confusing. That’s normal.
+- **Use `man`, `--help`, or Google** to understand commands and how to use them - you don’t need to memorise everything.
 - **Get comfortable with the basics**: `ls`, `cd`, `cat`, `find`, `file`, and `grep` will take you far.
 - **Make notes as you go.** When you finally crack the code with a command, make a note.
-- **Try Ubuntu on WSL if you're on Windows** — it gives you a real Linux environment right inside Windows.
+- **Consider downloading Ubuntu on WSL if you're on Windows** - it gives you a real Linux environment right inside Windows.
 
-**Finally, before you start, I highly recommend watching this guide to mastering Linux man pages. It will be priceless throughout the challenge:**
+**Finally, before you start, I highly recommend watching this guide to mastering Linux man pages. It will be invaluable throughout the challenge:**
 
 [Mastering Linux man pages (YouTube)](https://www.youtube.com/watch?v=RzAkjX_9B7E)
 
 ---
 
-## 🛠️ How to install WSL (Windows Subsystem for Linux)
+## 🛠️ How to Install WSL (Windows Subsystem for Linux)
 
-1. **Open PowerShell as Administrator**  
-Right-click the Start menu and select Windows PowerShell "Run as Administrator”.
+**1. Open PowerShell as Administrator**  
+- Right-click the Start menu, choose **Windows PowerShell**, and select **Run as Administrator**.
 
-2. **Run this command:**
+**2. Run the install command**  
    ```powershell
    wsl --install
+   ```
 
-This installs WSL along with Ubuntu by default. It may prompt you to restart your computer.  
+- This will install WSL along with Ubuntu by default. You may be prompted to restart your computer.
 
-3. **Set Username & Password**  
-After restarting, Ubuntu will launch automatically and ask you to create a username and password.
+**3. Set up your Linux user**
+
+- After restarting, Ubuntu will launch automatically and ask you to create a username and password.
 
 You’re now ready to start using Linux on Windows!
 
-If you're considering the challenge, want to talk about how I found it, or even need help just SSHing into the game for the first time, feel free to message me on LinkedIn!
+If you're considering the challenge, want to talk about how you found it, or even need help just SSHing into the game for the first time, feel free to message me on LinkedIn!
 
 ---
 
