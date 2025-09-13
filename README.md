@@ -29,7 +29,7 @@ By documenting each level, I’ve aimed to make the solutions clear, reproducibl
 - **Don’t panic** when the terminal looks empty, or when the output looks confusing. That’s normal.
 - **Use `man`, `--help`, or Google** to understand commands and how to use them - you don’t need to memorise everything.
 - **Get comfortable with the basics**: `ls`, `cd`, `cat`, `find`, `file`, and `grep` will take you far.
-- **Remember to make a note of each password**
+- **Remember to make a note of each password.**
 - **Make notes on commands as you go.** When you finally crack the code with a command, type/write it down for memory.
 - **Consider downloading Ubuntu on WSL if you're on Windows** - it gives you a real Linux environment right inside Windows.
 
