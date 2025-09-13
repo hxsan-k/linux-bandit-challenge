@@ -26,12 +26,11 @@ By documenting each level, I’ve aimed to make the solutions clear, reproducibl
 
 ## 🧠 New to Linux? Read This First  
 
-### If you're thinking about taking on Bandit and you're brand new to Linux, here's some tips based on my experience so far:
-
 - **Don’t panic** when the terminal looks empty, or when the output looks confusing. That’s normal.
 - **Use `man`, `--help`, or Google** to understand commands and how to use them - you don’t need to memorise everything.
 - **Get comfortable with the basics**: `ls`, `cd`, `cat`, `find`, `file`, and `grep` will take you far.
-- **Make notes as you go.** When you finally crack the code with a command, make a note.
+- **Remember to make a note of each password**
+- **Make notes on commands as you go.** When you finally crack the code with a command, type/write it down for memory.
 - **Consider downloading Ubuntu on WSL if you're on Windows** - it gives you a real Linux environment right inside Windows.
 
 **Finally, before you start, I highly recommend watching this guide to mastering Linux man pages. It will be invaluable throughout the challenge:**
