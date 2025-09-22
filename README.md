@@ -64,6 +64,4 @@ If you're considering the challenge, want to talk about how you found it, or eve
 ## 🔗 Connect with Me
 
 ### Feel free to connect or message me here:  
-#### [LinkedIn – Hasan Kamran](https://www.linkedin.com/in/hasankamran1)
-
----
+#### [LinkedIn – Hasan Kamran](https://www.linkedin.com/in/hasankamrandev)
