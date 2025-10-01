@@ -1,8 +1,10 @@
 # Linux Bandit Challenge Walkthrough 🐧
 
-This repo contains my notes, solutions, and lessons learned from completing the OverTheWire Bandit wargame. This project’s goal was to build practical Linux and command line skills from scratch, starting with no prior tech background, and to serve as a guide for anyone else beginning their journey into Linux fundamentals.  
+This repo contains my notes, solutions, and lessons learned from completing the OverTheWire Bandit wargame. 
 
-By documenting each level, I’ve aimed to make the solutions clear, reproducible, and beginner-friendly, while also highlighting the key concepts you pick up along the way.
+The goal was to build practical Linux command line skills with no prior tech background, and to serve as a guide for anyone else beginning their journey into Linux fundamentals.  
+
+By documenting each level, I’ve aimed to make the solutions clear, reproducible, and beginner-friendly, while also highlighting the key concepts learned along the way.
 
 ---
 
