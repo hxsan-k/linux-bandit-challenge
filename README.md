@@ -42,7 +42,7 @@ By documenting each level, I’ve aimed to make the solutions clear, reproducibl
 ## 🛠️ How to Install WSL (Windows Subsystem for Linux)
 
 **1. Open PowerShell as Administrator**  
-- Right-click the Start menu, choose **Windows PowerShell**, and select **Run as Administrator**.
+- Click the Start menu, search for **Windows PowerShell**, then right-click and choose **Run as Administrator**.
 
 **2. Run the install command**  
    ```powershell
