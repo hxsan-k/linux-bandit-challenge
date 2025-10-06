@@ -21,8 +21,8 @@ By documenting each level, I’ve aimed to make the solutions clear, reproducibl
 
 - `levels/` — contains all Bandit walkthroughs, one file per level.
 - Each level write-up shows the step-by-step process I used to solve it.
-- Before checking solutions, attempt the level on your own and use each step as a hint in the right direction.  
-- The repo is organised so you can follow the progression of the challenge from start to finish.  
+> [!TIP]
+> Before checking solutions, attempt the level on your own and use each step as a hint in the right direction when needed.
 
 ---
 
@@ -35,9 +35,10 @@ By documenting each level, I’ve aimed to make the solutions clear, reproducibl
 - **Make notes on commands as you go.** When you finally crack the code with a command, type/write it down for memory.
 - **Consider downloading Ubuntu on WSL if you're on Windows** - it gives you a real Linux environment right inside Windows.
 
-**Finally, before you start, I highly recommend watching this guide to mastering Linux man pages. It will be invaluable throughout the challenge:**
-
-[Mastering Linux man pages (YouTube)](https://www.youtube.com/watch?v=RzAkjX_9B7E)
+> [!IMPORTANT]
+> Before you start, I highly recommend watching this guide to mastering Linux man pages. It will be invaluable throughout the challenge and make you less dependant on Google and AI:
+> 
+> [Mastering Linux man pages (YouTube)](https://www.youtube.com/watch?v=RzAkjX_9B7E)
 
 ---
 
