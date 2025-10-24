@@ -60,11 +60,4 @@ By documenting each level, I’ve aimed to make the solutions clear, reproducibl
 
 You’re now ready to start using Linux on Windows!
 
-If you're considering the challenge, want to talk about how you found it, or even need help just SSHing into the game for the first time, feel free to message me on LinkedIn!
 
----
-
-## 🔗 Connect with Me
-
-### Feel free to connect or message me here:  
-#### [LinkedIn – Hasan Kamran](https://www.linkedin.com/in/hasankamrandev)
