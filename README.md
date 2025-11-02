@@ -1,5 +1,8 @@
 # Linux Bandit Challenge Walkthrough 🐧
 
+[![Linux](https://img.shields.io/badge/Platform-Linux-2C2C2C?logo=linux)](https://www.kernel.org/)
+[![Bash](https://img.shields.io/badge/Language-Bash-121011?logo=gnubash&logoColor=white)](https://www.gnu.org/software/bash/)
+
 This repo contains my notes, solutions, and lessons learned from completing the OverTheWire Bandit wargame. 
 
 The goal was to build practical Linux command line skills with no prior tech background, and to serve as a guide for anyone else beginning their journey into Linux fundamentals.  
